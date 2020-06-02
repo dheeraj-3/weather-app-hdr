@@ -28,7 +28,6 @@ wForecast.addEventListener('submit', (e)=> {
             message1.textContent = data.address
             message2.textContent = data.temp
 
-
         }
         
     })
