@@ -24,7 +24,12 @@ const forecast = (latitude, longitude, callback) => {
         } else if(body.cod) {
             callback('Location not found', undefined)
         } else {
-            callback('undefined', temp = body.current.temp
+            // callback('undefined', temp = body.current.temp
+            // callback('undefined', temp = body.current.temp, humidity = body.current.humidity
+            callback( 'undefined', {
+                temp: body.current.temp, 
+                humidity: body.current.humidity
+            }
              )
         }
     })

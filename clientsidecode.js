@@ -6,9 +6,11 @@ const wForecast = document.querySelector('form')
 const search = document.querySelector('input')
 const message1 = document.querySelector('#message-1')
 const message2 = document.querySelector('#message-2')
+const message3 = document.querySelector('#message-3')
 
 message1.textContent = 'Loading message'
 message2.textContent = '' 
+message3.textContent = ''
 
 wForecast.addEventListener('submit', (e)=> {
     e.preventDefault()
@@ -27,6 +29,8 @@ wForecast.addEventListener('submit', (e)=> {
             // console.log(data.temp)
             message1.textContent = data.address
             message2.textContent = data.temp
+            message3.textContent = data.humidity
+            
 
         }
         

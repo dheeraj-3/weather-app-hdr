@@ -92,7 +92,10 @@ app.get('/weather',(req, res) => {
                 longitude,
                 //placeName,
                 address: req.query.address,
-                temp
+                // temp,
+                // humidity
+                temp: foreCastdata.temp,
+                humidity: foreCastdata.humidity
             })
 
             })      
