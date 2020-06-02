@@ -1,5 +1,6 @@
 // console.log('Hello')
 // alert('Working')
+//console.log('abcd')
 
 const wForecast = document.querySelector('form')
 const search = document.querySelector('input')
