@@ -1,0 +1,2 @@
+Unable to run index.hbs, about and help from inside this folder due to error in path.
+Created a new views folder under src and put all the three above files inside it, working like a charm
