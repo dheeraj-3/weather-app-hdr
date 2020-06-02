@@ -17,7 +17,7 @@ wForecast.addEventListener('submit', (e)=> {
         // console.log('Enter a valid address')
         message2.textContent = 'Enter a valid address'
     } else {
-        fetch('http://localhost:3000/weather/?address=' + search.value).then((response) => {
+        fetch('/weather/?address=' + search.value).then((response) => {
     response.json().then((data) => {
         if(data.error) {
             // console.log(data.error)
